@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página HTML</title>
+  <style>
+    /* Estilos generales para la página */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Clase para alto contraste */
+    .alto-contraste {
+      background-color: black; /* Fondo negro */
+      color: white;             /* Texto blanco */
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Otro ejemplo de alto contraste con fondo amarillo y texto negro */
+    .contraste-amarillo {
+      background-color: yellow; /* Fondo amarillo */
+      color: black;              /* Texto negro */
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Menú de navegación interna -->
+  <nav role="navigation" aria-label="Menú de navegación">
+    <ul>
+      <li><a href="#introduccion" aria-label="Ir a la sección de introducción">Introducción</a></li>
+      <li><a href="#elementos-naturales" aria-label="Ir a la sección de elementos naturales">Elementos Naturales</a></li>
+      <li><a href="#tipos-arboles" aria-label="Ir a la sección de tipos de árboles">Tipos de Árboles</a></li>
+      <li><a href="#animales" aria-label="Ir a la sección de animales">Animales</a></li>
+    </ul>
+  </nav>
+  
+  <h1 id="introduccion" aria-describedby="introduccionDescripcion">Bienvenido a mi página</h1>
+  <p id="introduccionDescripcion">Esta página es un ejercicio para aprender HTML. Vamos a explorar cómo dar formato a los textos en HTML.</p>
+  
+  <h2 id="elementos-naturales">1. Elementos naturales en un parque</h2>
+  <!-- Lista no ordenada de elementos naturales en un parque -->
+  <ul>
+    <li>Árboles</li>
+    <li>Flores</li>
+    <li>Aves</li>
+    <li>Insectos</li>
+    <li>Arbustos</li>
+  </ul>
+  
+  <h3 id="tipos-arboles">2. Clasificación de tipos de árboles</h3>
+  <ol>
+    <li>Tipos de árboles
+      <ul>
+        <li>Robles</li>
+        <li>Pinos</li>
+        <li>Abetos</li>
+      </ul>
+    </li>
+  </ol>
+  
+  <h4 id="animales">3. Pasos para observar animales</h4>
+  <ol>
+    <li>Escuchar el sonido de las aves</li>
+    <li>Observar los movimientos de los insectos</li>
+    <li>Caminar silenciosamente para ver mamíferos</li>
+  </ol>
+
+  <!-- Enlaces externos a sitios relacionados con parques nacionales -->
+  <h2>Enlaces Externos sobre Parques Nacionales</h2>
+  <ul>
+    <li><a href="https://www.parquesnacionales.gob.mx/" target="_blank" aria-label="Ir al sitio de parques nacionales de México">Página Oficial de Parques Nacionales de México</a></li>
+    <li><a href="https://es.wikipedia.org/wiki/Parque_nacional" target="_blank" aria-label="Ir a la Wikipedia sobre parques nacionales">Wikipedia: Parques Nacionales</a></li>
+    <li><a href="https://www.nationalgeographic.com/travel/national-parks/" target="_blank" aria-label="Ir a National Geographic: National Parks">National Geographic: National Parks</a></li>
+  </ul>
+
+  <footer role="contentinfo">
+    <p>© 2024 Creado por Anabel Medina</p>
+  </footer>
+
+  <!-- Sección con alto contraste de colores -->
+  <section class="alto-contraste" role="region" aria-labelledby="altoContrasteTitulo">
+    <h2 id="altoContrasteTitulo">Bienvenido a nuestra sección de alto contraste</h2>
+    <p>Esta sección tiene un alto contraste de colores para mejorar la legibilidad, especialmente para personas con discapacidades visuales.</p>
+    <p>El contraste de colores es fundamental para asegurar que los contenidos sean accesibles a un mayor número de personas.</p>
+  </section>
+
+  <!-- Otra opción de alto contraste (amarillo y negro) -->
+  <section class="contraste-amarillo" role="region" aria-labelledby="contrasteAmarilloTitulo">
+    <h2 id="contrasteAmarilloTitulo">Ejemplo de Alto Contraste (Amarillo y Negro)</h2>
+    <p>Este es otro ejemplo de alto contraste utilizando colores amarillos y negros para mejorar la visibilidad del texto.</p>
+  </section>
+
+  <!-- Explicación del contraste de colores -->
+  <!--
+    El contraste de colores es esencial para la accesibilidad web porque ayuda a las personas con discapacidades visuales a leer el contenido. 
+    La relación de contraste recomendada por las WCAG (Web Content Accessibility Guidelines) es de al menos 4.5:1 para texto normal. 
+    Esto asegura que el texto sea claramente legible, incluso en condiciones de baja iluminación o para personas con visión limitada.
+  -->
+
+</body>
+</html>
